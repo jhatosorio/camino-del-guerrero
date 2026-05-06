@@ -291,8 +291,8 @@
         <input type="text" id="inputName" placeholder="¿Cómo te llamas?" />
       </div>
       <div class="form-group">
-        <label>Correo electrónico</label>
-        <input type="email" id="inputEmail" placeholder="tucorreo@email.com" />
+        <label>Usuario de Instagram</label>
+        <input type="text" id="inputEmail" placeholder="@tuusuario" />
       </div>
       <div class="form-group">
         <label>WhatsApp</label>
@@ -474,8 +474,7 @@
     const phone = document.getElementById('inputPhone').value.trim();
     const fullPhone = code + ' ' + phone;
 
-    if (!name || !email || !phone) { alert('Por favor completa tu nombre, correo y WhatsApp antes de continuar.'); return; }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Por favor ingresa un correo válido.'); return; }
+    if (!name || !email || !phone) { alert('Por favor completa tu nombre, Instagram y WhatsApp antes de continuar.'); return; }
 
     document.getElementById('agendarBtn').style.display = 'none';
     document.getElementById('sendingState').style.display = 'block';
